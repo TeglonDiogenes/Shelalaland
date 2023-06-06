@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Rad Blog</title>
+  </head>
+  <body>
+    <h1 id="get-a-list-of-installed-packages-on-debian%2Fubuntu" tabindex="-1">Get a list of installed packages on Debian/Ubuntu</h1>
+<p>To list all installed packages on Ubuntu, you can use the <code>dpkg</code> command, which is a package manager for Debian-based systems like Ubuntu. Here is the command:</p>
+<pre><code class="language-bash">dpkg --get-selections
+</code></pre>
+<p>This will list all installed packages. The output will be quite long as it includes every package, including libraries and small utilities.</p>
+<p>If you want to see only the major packages that were explicitly installed (not including dependencies), you can use the <code>apt-mark</code> command:</p>
+<pre><code class="language-bash">apt-mark showmanual
+</code></pre>
+<p>This will show a list of packages that were manually installed, which is usually a shorter list and might be closer to what you're interested in.</p>
+<p>Remember to run these commands in the terminal.</p>
+
+  </body>
+</html>
