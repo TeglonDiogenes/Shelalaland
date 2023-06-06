@@ -1,3 +1,4 @@
+  const anchors_plugin = require('@orchidjs/eleventy-plugin-ids');
 // .eleventy.js
 const mdOptions = {
   html: true,
@@ -27,5 +28,7 @@ module.exports = eleventyConfig => {
   )
 eleventyConfig.addPlugin( eleventyNavigationPlugin );
   eleventyConfig.addPlugin(pluginTOC)
+    eleventyConfig.addPlugin(anchors_plugin);
+    
   // ... your other Eleventy config options
 }
