@@ -14,6 +14,7 @@ const mdAnchorOpts = {
 }
 
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const metagen = require('eleventy-plugin-metagen');
 
   const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
@@ -29,6 +30,7 @@ module.exports = eleventyConfig => {
 eleventyConfig.addPlugin( eleventyNavigationPlugin );
   eleventyConfig.addPlugin(pluginTOC)
     eleventyConfig.addPlugin(anchors_plugin);
+    eleventyConfig.addPlugin(metagen);
     
   // ... your other Eleventy config options
 }
