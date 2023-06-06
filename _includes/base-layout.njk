@@ -1,5 +1,5 @@
 ---
-title: My Rad Blog
+title: Shelalalend - 
 ---
 <!doctype html>
 <html lang="en">
@@ -9,6 +9,11 @@ title: My Rad Blog
     <title>{{ title }}</title>
   </head>
   <body>
+  <article>
     {{ content | safe }}
+    </article>
+    <aside>
+      {{ content | toc | safe }}
+      </aside>
   </body>
 </html>
