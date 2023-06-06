@@ -12,8 +12,9 @@ const mdAnchorOpts = {
   level: [1, 2, 3, 4]
 }
 
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-const markdownIt = require('markdown-it')
+  const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const pluginTOC = require('eleventy-plugin-toc')
 // .eleventy.js
@@ -24,6 +25,7 @@ module.exports = eleventyConfig => {
     'md',
     markdownIt().use(markdownItAnchor)
   )
+eleventyConfig.addPlugin( eleventyNavigationPlugin );
   eleventyConfig.addPlugin(pluginTOC)
   // ... your other Eleventy config options
 }
