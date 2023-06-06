@@ -1,3 +1,8 @@
+---
+layout: base-layout.njk
+---
+# Get a list of installed packages on Debian/Ubuntu 
+
 To list all installed packages on Ubuntu, you can use the `dpkg` command, which is a package manager for Debian-based systems like Ubuntu. Here is the command:
 
 ```bash
