@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "debug": "^4.3.4",
-    "dotenv": "^16.1.4"
+    "dotenv": "^16.1.4",
+    "mqtt": "^4.3.7"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
