@@ -1,0 +1,21 @@
+{
+  "name": "shelalaland",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.1.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "nunjucks": "^3.2.4"
+  }
+}
