@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "dev": "eleventy --serve"
+    "bbuild": "parcel build index.html",
+    "bdev": "parcel index.html --open",
+    "bstart": "npm run build && npm run dev",
+    "build": "eleventy --input=./content",
+    "dev": "eleventy --input=./content--serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@orchidjs/eleventy-plugin-ids": "^0.1.1",
+    "parcel-bundler": "^1.12.4",
     "debug": "^4.3.4",
     "dotenv": "^16.1.4",
     "eleventy-plugin-metagen": "^1.7.11",
